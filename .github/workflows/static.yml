@@ -23,10 +23,6 @@ jobs:
           node-version: 20
 
       - name: Install and Build
-        # This one line tells GitHub: 
-        # 1. Ignore version errors (--legacy-peer-deps)
-        # 2. Ignore code warnings (CI=false)
-        # 3. Skip the strict "tsc" check that failed in run #8
         run: |
           npm install --legacy-peer-deps
           CI=false npx vite build --base=/World-Largest-Independent-Digital-Encyclopedia-Helix-Library/
