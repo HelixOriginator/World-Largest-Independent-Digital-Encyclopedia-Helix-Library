@@ -1,0 +1,2 @@
+# World-Largest-Independent-Digital-Encyclopedia-Helix-Library
+World’s largest independent digital encyclopedia featuring 194+ original frameworks by Kallol Chakrabarti. Highlights 100+ "first-of-its-kind" breakthroughs, including Dharma as Universal Systems Logic (DOI:10.5281/zenodo.18498639), VAFGPE governance, and MACN occupational health. A curated archive of unprecedented global intellectual property.
