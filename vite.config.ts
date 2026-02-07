@@ -1,8 +1,17 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import path from 'path'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/World-Largest-Independent-Digital-Encyclopedia-Helix-Library/',
+  // This tells the engine your files are in the main folder, not 'src'
+  root: './', 
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './'),
+    },
+  },
+  build: {
+    outDir: 'dist',
+  }
 })
