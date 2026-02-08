@@ -1,0 +1,6 @@
+# Helix Encyclopedia - Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemaps help Google find your 194+ frameworks faster
+Sitemap: https://helixoriginator.github.io/World-Largest-Independent-Digital-Encyclopedia-Helix-Library/sitemap.xml
