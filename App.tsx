@@ -1,7 +1,8 @@
 import React from 'react';
 
 export default function App() {
-  const netlifyUrl = "https://beautiful-buttercream-a291c6.netlify.app/";
+  // ✅ UPDATED: Correct encyclopedia URL + removed trailing spaces
+  const netlifyUrl = "https://largest-independentresearcher-library.netlify.app/";
   const noveltyUrl = "https://novelty-benchmark-kallol-chakrabarti.netlify.app/";
 
   return (
@@ -45,7 +46,7 @@ export default function App() {
           </p>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', alignItems: 'center' }}>
-            {/* Primary Action */}
+            {/* Primary Action - Now points to correct URL */}
             <a 
               href={netlifyUrl} 
               target="_blank" 
