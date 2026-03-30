@@ -1,22 +1,26 @@
 import React from 'react';
 
 export default function App() {
-  // ✅ UPDATED: Correct encyclopedia URL + removed trailing spaces
+  // ✅ URLs
   const netlifyUrl = "https://largest-independentresearcher-library.netlify.app/";
   const noveltyUrl = "https://novelty-benchmark-kallol-chakrabarti.netlify.app/";
+  
+  // 🔗 NEW: Research Repository Links
+  const governanceMarketUrl = "https://helixoriginator.github.io/Kallol-Chakrabarti-Research-Repository-Governance-Market-Systems-and-Strategic-Frameworks/";
+  const civicKnowledgeUrl = "https://helixoriginator.github.io/Civic-Knowledge-Hub-Governance-Law-Democracy-Studies/";
+  const researchRepositoriesUrl = "https://kallol-research-repositories.netlify.app/";
 
   return (
-    <div style={{ 
+    <div style={{
       margin: 0,
-      padding: 0, 
-      height: '100vh', 
-      display: 'flex', 
-      flexDirection: 'column', 
+      padding: 0,
+      height: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
       backgroundColor: '#0f172a',
-      fontFamily: '-apple-system, system-ui, sans-serif', 
+      fontFamily: '-apple-system, system-ui, sans-serif',
       color: 'white'
     }}>
-      
       {/* Central Launch Hub */}
       <div style={{
         flex: 1,
@@ -46,7 +50,7 @@ export default function App() {
           </p>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', alignItems: 'center' }}>
-            {/* Primary Action - Now points to correct URL */}
+            {/* Primary Action */}
             <a 
               href={netlifyUrl} 
               target="_blank" 
@@ -68,7 +72,7 @@ export default function App() {
               Launch Full Encyclopedia ↗
             </a>
 
-            {/* Achievement/Novelty Button */}
+            {/* Novelty Button */}
             <a 
               href={noveltyUrl} 
               target="_blank" 
@@ -88,6 +92,72 @@ export default function App() {
               }}
             >
               ★ View 25 Verified Novelty Breakthroughs (90+)
+            </a>
+
+            {/* 🔗 NEW: Governance & Market Systems */}
+            <a 
+              href={governanceMarketUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{ 
+                width: '80%',
+                display: 'inline-block', 
+                padding: '14px 40px', 
+                fontSize: '1rem',
+                fontWeight: '600',
+                color: '#ffffff', 
+                border: '1px solid rgba(148, 163, 184, 0.4)',
+                backgroundColor: 'rgba(148, 163, 184, 0.1)',
+                borderRadius: '50px', 
+                textDecoration: 'none',
+                transition: 'all 0.2s ease'
+              }}
+            >
+              📊 Governance, Market Systems & Strategic Frameworks ↗
+            </a>
+
+            {/* 🔗 NEW: Civic Knowledge Hub */}
+            <a 
+              href={civicKnowledgeUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{ 
+                width: '80%',
+                display: 'inline-block', 
+                padding: '14px 40px', 
+                fontSize: '1rem',
+                fontWeight: '600',
+                color: '#ffffff', 
+                border: '1px solid rgba(148, 163, 184, 0.4)',
+                backgroundColor: 'rgba(148, 163, 184, 0.1)',
+                borderRadius: '50px', 
+                textDecoration: 'none',
+                transition: 'all 0.2s ease'
+              }}
+            >
+              ⚖️ Civic Knowledge Hub: Governance, Law & Democracy Studies ↗
+            </a>
+
+            {/* 🔗 NEW: Research Repositories Index */}
+            <a 
+              href={researchRepositoriesUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{ 
+                width: '80%',
+                display: 'inline-block', 
+                padding: '14px 40px', 
+                fontSize: '1rem',
+                fontWeight: '600',
+                color: '#ffffff', 
+                border: '1px solid rgba(148, 163, 184, 0.4)',
+                backgroundColor: 'rgba(148, 163, 184, 0.1)',
+                borderRadius: '50px', 
+                textDecoration: 'none',
+                transition: 'all 0.2s ease'
+              }}
+            >
+              🗂️ All Research Repositories Index ↗
             </a>
           </div>
 
@@ -109,8 +179,14 @@ export default function App() {
         </div>
       </div>
 
+      {/* ✅ Footer with Attribution */}
       <footer style={{ padding: '20px', textAlign: 'center', fontSize: '12px', color: '#475569' }}>
-        Verified via CERN/Zenodo Data Centre • Permanent Digital DOI Record • 2026
+        <p style={{ margin: '5px 0' }}>
+          Verified via CERN/Zenodo Data Centre • Permanent Digital DOI Record • 2026
+        </p>
+        <p style={{ margin: '5px 0', color: '#64748b' }}>
+          Created by Kallol Chakrabarti, Global Independent Researcher
+        </p>
       </footer>
     </div>
   );
