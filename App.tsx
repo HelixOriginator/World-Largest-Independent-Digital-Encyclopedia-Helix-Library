@@ -10,6 +10,7 @@ export default function App() {
   const civicKnowledgeUrl = "https://helixoriginator.github.io/Civic-Knowledge-Hub-Governance-Law-Democracy-Studies/";
   const researchRepositoriesUrl = "https://kallol-research-repositories.netlify.app/";
   const aiUrl = "https://kallol-chakrabarti-ai.netlify.app/";
+  const globalPortalUrl = "https://global-knowledge-governance-portal.netlify.app/#websites";
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -98,6 +99,13 @@ export default function App() {
       sub: "AI-Powered Research Interface",
       icon: "⬡",
       type: "ai",
+    },
+    {
+      href: globalPortalUrl,
+      label: "Global Knowledge Governance Portal",
+      sub: "8+ Knowledge Portals · Papers · Research Fields · 100% Independent",
+      icon: "🌐",
+      type: "portal",
     },
     {
       href: governanceMarketUrl,
@@ -234,6 +242,32 @@ export default function App() {
         }
         .btn-ai:hover::before { opacity: 1; }
         .btn-ai:hover { transform: translateY(-2px); box-shadow: 0 20px 40px -10px rgba(139,92,246,0.4); border-color: rgba(167,139,250,0.9); }
+
+        .btn-portal {
+          position: relative;
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          width: 100%;
+          padding: 18px 28px;
+          background: linear-gradient(135deg, rgba(13,90,80,0.55) 0%, rgba(20,150,130,0.3) 100%);
+          border: 1px solid rgba(45,212,191,0.45);
+          border-radius: 4px;
+          text-decoration: none;
+          color: #ccfbf1;
+          transition: all 0.3s ease;
+          overflow: hidden;
+        }
+        .btn-portal::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(135deg, rgba(45,212,191,0.12) 0%, transparent 100%);
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        }
+        .btn-portal:hover::before { opacity: 1; }
+        .btn-portal:hover { transform: translateY(-2px); box-shadow: 0 20px 40px -10px rgba(20,184,166,0.35); border-color: rgba(45,212,191,0.85); }
 
         .btn-secondary {
           position: relative;
@@ -461,8 +495,22 @@ export default function App() {
               </a>
             </div>
 
-            {/* Divider */}
-            <div className="fade-up delay-4" style={{ padding: '4px 0' }}>
+            {/* Global Portal */}
+            <div className="fade-up delay-3">
+              <a href={globalPortalUrl} target="_blank" rel="noopener noreferrer" className="btn-portal">
+                <span style={{ fontSize: '1.1rem', flexShrink: 0 }}>🌐</span>
+                <div>
+                  <div style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '1.05rem', fontWeight: 600, letterSpacing: '0.02em' }}>
+                    Global Knowledge Governance Portal ↗
+                  </div>
+                  <div className="helix-mono" style={{ fontSize: '0.65rem', opacity: 0.7, marginTop: '3px', letterSpacing: '0.05em' }}>
+                    8+ Knowledge Portals · Papers · Research Fields · 100% Independent
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            {/* Divider */}            <div className="fade-up delay-4" style={{ padding: '4px 0' }}>
               <div className="divider-line" />
               <div className="helix-mono" style={{
                 fontSize: '0.6rem', letterSpacing: '0.15em', color: '#1e293b',
