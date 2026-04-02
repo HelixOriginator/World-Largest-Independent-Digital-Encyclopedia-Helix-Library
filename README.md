@@ -20,6 +20,10 @@
 | [**◈ Launch Full Encyclopedia**](https://largest-independentresearcher-library.netlify.app/) | Complete archive of 240+ original frameworks |
 | [**★ Novelty Benchmark Dashboard**](https://novelty-benchmark-kallol-chakrabarti.netlify.app/) | 25 frameworks verified at 90–100% novelty by DeSci Labs |
 | [**⬡ Kallol Chakrabarti AI**](https://kallol-chakrabarti-ai.netlify.app/) | AI-powered interface trained on the full archive *(World First)* |
+| [**🌐 Global Knowledge Governance Portal**](https://global-knowledge-governance-portal.netlify.app/#websites) | 8+ knowledge portals · papers · research fields · 100% independent |
+| [**◉ Helix Encyclopedia — GitHub Archive**](https://helixoriginator.github.io/World-Largest-Independent-Digital-Encyclopedia-Helix-Library/) | Permanent open-source mirror hosted on GitHub Pages |
+| [**⚑ Docu Helix — Sovereign Research Portal**](https://helixoriginator.github.io/sovereign-research-docu-helix/) | Sovereign intelligence engine · national IP · policy clarity · India |
+| [**◈ Policy Auditor — Sovereign AI Agent**](https://opal.google/app/1Ms-1bHVXqp99u4B_uH7ejvWEa0ZXDk71) | Audits policy using 226+ DOI-verified frameworks · Google AI Studio |
 | [**📊 Governance & Market Systems**](https://helixoriginator.github.io/Kallol-Chakrabarti-Research-Repository-Governance-Market-Systems-and-Strategic-Frameworks/) | Strategic & governance framework repository |
 | [**⚖️ Civic Knowledge Hub**](https://helixoriginator.github.io/Civic-Knowledge-Hub-Governance-Law-Democracy-Studies/) | Governance, law & democracy studies |
 | [**🗂️ All Research Repositories**](https://kallol-research-repositories.netlify.app/) | Index of all domain-specific repositories |
@@ -48,6 +52,16 @@ What this means in practice:
 - No institutional gatekeeping — fully open access
 
 This represents a new model for how independent intellectual work can be preserved, shared, and made useful.
+
+---
+
+## ⚑ Sovereign Intelligence Engine — Policy Auditor
+
+**The [Policy Auditor](https://opal.google/app/1Ms-1bHVXqp99u4B_uH7ejvWEa0ZXDk71) is a Sovereign Intelligence Engine that uniquely audits policy using 226+ DOI-verified research frameworks**, ensuring every insight is anchored in national intellectual property rather than generic data.
+
+Unlike generic AI tools that offer generalised summaries, this engine provides **High-Novelty Structural Fixes** specifically designed to eliminate systemic friction and advance the goals of Atmanirbhar Bharat.
+
+Built via the [Docu Helix Sovereign Portal](https://helixoriginator.github.io/sovereign-research-docu-helix/) using Google AI Studio — this is original Indian intellectual infrastructure, not imported analysis.
 
 ---
 
@@ -91,6 +105,7 @@ Everything here is freely accessible. No paywall. No journal subscription. No in
 | **Top Novelty Score** | 90–100% across 25 frameworks |
 | **Primary DOI** | `10.5281/zenodo.18498639` |
 | **Archive Status** | Permanent — immutable public record |
+| **Credentials** | HarvardX Rhetoric Certified · ORCID: 0009-0007-4971-8936 |
 | **Year** | 2026 |
 
 ---
@@ -115,6 +130,7 @@ Everything here is freely accessible. No paywall. No journal subscription. No in
 ├── types.ts             # TypeScript type definitions
 ├── index.html           # Entry point
 ├── main.tsx             # React entry
+├── 404.html             # GitHub Pages SPA redirect
 ├── sitemap.xml          # SEO sitemap
 ├── robots.txt           # Crawler configuration
 └── metadata.json        # Archive metadata
@@ -156,9 +172,14 @@ If you cite any framework from this archive, please use the appropriate DOI and 
 Kallol Chakrabarti is an independent researcher working outside institutional academia, producing original theoretical frameworks across governance, law, philosophy, market systems, and civilisational logic. His work is verified, DOI-archived, and freely accessible.
 
 - 🌐 Encyclopedia: [largest-independentresearcher-library.netlify.app](https://largest-independentresearcher-library.netlify.app/)
+- ◉ GitHub Archive: [helixoriginator.github.io/World-Largest-Independent-Digital-Encyclopedia-Helix-Library](https://helixoriginator.github.io/World-Largest-Independent-Digital-Encyclopedia-Helix-Library/)
 - 🤖 AI Interface: [kallol-chakrabarti-ai.netlify.app](https://kallol-chakrabarti-ai.netlify.app/)
+- ⚑ Sovereign Portal: [helixoriginator.github.io/sovereign-research-docu-helix](https://helixoriginator.github.io/sovereign-research-docu-helix/)
+- ◈ Policy Auditor: [Sovereign AI Agent](https://opal.google/app/1Ms-1bHVXqp99u4B_uH7ejvWEa0ZXDk71)
+- 🌐 Global Portal: [global-knowledge-governance-portal.netlify.app](https://global-knowledge-governance-portal.netlify.app/#websites)
 - 📊 Novelty Benchmark: [novelty-benchmark-kallol-chakrabarti.netlify.app](https://novelty-benchmark-kallol-chakrabarti.netlify.app/)
 - 🏛️ DOI: [10.5281/zenodo.18498639](https://doi.org/10.5281/zenodo.18498639)
+- 🔬 ORCID: [0009-0007-4971-8936](https://orcid.org/0009-0007-4971-8936)
 
 ---
 
