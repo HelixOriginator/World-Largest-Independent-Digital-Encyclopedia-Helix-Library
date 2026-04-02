@@ -4,7 +4,6 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18498639-blue?style=flat-square)](https://doi.org/10.5281/zenodo.18498639)
 [![Novelty Verified](https://img.shields.io/badge/DeSci%20Labs-25%20Frameworks%20%7C%2090--100%25%20Novelty-gold?style=flat-square)](https://novelty-benchmark-kallol-chakrabarti.netlify.app/)
 [![Frameworks](https://img.shields.io/badge/Original%20Frameworks-240%2B-brightgreen?style=flat-square)](https://largest-independentresearcher-library.netlify.app/)
-[![Verified](https://img.shields.io/badge/Archive-CERN%20Verified-lightgrey?style=flat-square)](https://doi.org/10.5281/zenodo.18498639)
 [![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red?style=flat-square)](#)
 
 ---
