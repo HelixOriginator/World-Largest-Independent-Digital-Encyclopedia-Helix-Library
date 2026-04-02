@@ -11,6 +11,9 @@ export default function App() {
   const researchRepositoriesUrl = "https://kallol-research-repositories.netlify.app/";
   const aiUrl = "https://kallol-chakrabarti-ai.netlify.app/";
   const globalPortalUrl = "https://global-knowledge-governance-portal.netlify.app/#websites";
+  const helixGithubUrl = "https://helixoriginator.github.io/World-Largest-Independent-Digital-Encyclopedia-Helix-Library/";
+  const docuHelixUrl = "https://helixoriginator.github.io/sovereign-research-docu-helix/";
+  const policyAuditorUrl = "https://opal.google/app/1Ms-1bHVXqp99u4B_uH7ejvWEa0ZXDk71";
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -269,6 +272,58 @@ export default function App() {
         .btn-portal:hover::before { opacity: 1; }
         .btn-portal:hover { transform: translateY(-2px); box-shadow: 0 20px 40px -10px rgba(20,184,166,0.35); border-color: rgba(45,212,191,0.85); }
 
+        .btn-amber {
+          position: relative;
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          width: 100%;
+          padding: 18px 28px;
+          background: linear-gradient(135deg, rgba(120,60,5,0.55) 0%, rgba(180,100,10,0.3) 100%);
+          border: 1px solid rgba(251,146,60,0.45);
+          border-radius: 4px;
+          text-decoration: none;
+          color: #ffedd5;
+          transition: all 0.3s ease;
+          overflow: hidden;
+        }
+        .btn-amber::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(135deg, rgba(251,146,60,0.12) 0%, transparent 100%);
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        }
+        .btn-amber:hover::before { opacity: 1; }
+        .btn-amber:hover { transform: translateY(-2px); box-shadow: 0 20px 40px -10px rgba(234,88,12,0.35); border-color: rgba(251,146,60,0.85); }
+
+        .btn-sovereign {
+          position: relative;
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          width: 100%;
+          padding: 18px 28px;
+          background: linear-gradient(135deg, rgba(100,10,30,0.55) 0%, rgba(160,20,50,0.3) 100%);
+          border: 1px solid rgba(251,113,133,0.45);
+          border-radius: 4px;
+          text-decoration: none;
+          color: #ffe4e6;
+          transition: all 0.3s ease;
+          overflow: hidden;
+        }
+        .btn-sovereign::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(135deg, rgba(251,113,133,0.12) 0%, transparent 100%);
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        }
+        .btn-sovereign:hover::before { opacity: 1; }
+        .btn-sovereign:hover { transform: translateY(-2px); box-shadow: 0 20px 40px -10px rgba(225,29,72,0.35); border-color: rgba(251,113,133,0.85); }
+
         .btn-secondary {
           position: relative;
           display: flex;
@@ -505,6 +560,87 @@ export default function App() {
                   </div>
                   <div className="helix-mono" style={{ fontSize: '0.65rem', opacity: 0.7, marginTop: '3px', letterSpacing: '0.05em' }}>
                     8+ Knowledge Portals · Papers · Research Fields · 100% Independent
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            {/* Helix Library — GitHub Pages deployment */}
+            <div className="fade-up delay-3">
+              <a href={helixGithubUrl} target="_blank" rel="noopener noreferrer" className="btn-amber">
+                <span style={{ fontSize: '1.1rem', flexShrink: 0 }}>◉</span>
+                <div>
+                  <div style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '1.05rem', fontWeight: 600, letterSpacing: '0.02em' }}>
+                    Helix Encyclopedia — GitHub Archive ↗
+                  </div>
+                  <div className="helix-mono" style={{ fontSize: '0.65rem', opacity: 0.7, marginTop: '3px', letterSpacing: '0.05em' }}>
+                    Permanent open-source mirror · 240+ frameworks · GitHub Pages
+                  </div>
+                </div>
+              </a>
+              <div style={{
+                marginTop: '6px',
+                padding: '6px 12px',
+                background: 'linear-gradient(90deg, rgba(120,60,5,0.2), transparent)',
+                borderLeft: '2px solid rgba(251,146,60,0.5)',
+                borderRadius: '2px',
+              }}>
+                <p className="helix-mono" style={{ fontSize: '0.6rem', color: '#fed7aa', letterSpacing: '0.06em', lineHeight: 1.5 }}>
+                  The definitive open-source deployment of the Helix Library — permanently hosted, freely accessible, version-controlled on GitHub.
+                </p>
+              </div>
+            </div>
+
+            {/* Docu Helix Sovereign Portal + Policy Auditor */}
+            <div className="fade-up delay-3">
+              {/* Sovereign callout */}
+              <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '10px',
+                marginBottom: '6px',
+                padding: '6px 12px',
+                background: 'linear-gradient(90deg, rgba(100,10,30,0.25), rgba(160,20,50,0.08), transparent)',
+                borderLeft: '2px solid #fb7185',
+                borderRadius: '2px',
+              }}>
+                <span style={{ fontSize: '0.7rem' }}>🇮🇳</span>
+                <p className="helix-mono" style={{ fontSize: '0.62rem', color: '#fecdd3', letterSpacing: '0.08em', lineHeight: 1.5 }}>
+                  <span style={{ color: '#fb7185', fontWeight: 600 }}>SOVEREIGN INTELLIGENCE ENGINE —</span> Audits policy using 226+ DOI-verified frameworks. Built for Atmanirbhar Bharat. Unlike generic AI — every insight anchored in national intellectual property.
+                </p>
+              </div>
+              <a href={docuHelixUrl} target="_blank" rel="noopener noreferrer" className="btn-sovereign">
+                <span style={{ fontSize: '1.1rem', flexShrink: 0 }}>⚑</span>
+                <div>
+                  <div style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '1.05rem', fontWeight: 600, letterSpacing: '0.02em' }}>
+                    Docu Helix — Sovereign Research Portal ↗
+                  </div>
+                  <div className="helix-mono" style={{ fontSize: '0.65rem', opacity: 0.7, marginTop: '3px', letterSpacing: '0.05em' }}>
+                    National IP · Policy Clarity · Governance Frameworks · India
+                  </div>
+                </div>
+              </a>
+              {/* Policy Auditor sub-button */}
+              <a href={policyAuditorUrl} target="_blank" rel="noopener noreferrer" style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '12px',
+                marginTop: '6px',
+                padding: '12px 20px',
+                background: 'rgba(100,10,30,0.3)',
+                border: '1px dashed rgba(251,113,133,0.35)',
+                borderRadius: '4px',
+                textDecoration: 'none',
+                color: '#fecdd3',
+                transition: 'all 0.3s ease',
+              }}>
+                <span style={{ fontSize: '0.9rem', flexShrink: 0 }}>◈</span>
+                <div>
+                  <div style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '0.95rem', fontWeight: 600, letterSpacing: '0.02em' }}>
+                    Policy Auditor — Sovereign AI Agent ↗
+                  </div>
+                  <div className="helix-mono" style={{ fontSize: '0.6rem', opacity: 0.7, marginTop: '2px', letterSpacing: '0.05em' }}>
+                    High-Novelty Structural Fixes · Powered by Google AI Studio · Opal
                   </div>
                 </div>
               </a>
