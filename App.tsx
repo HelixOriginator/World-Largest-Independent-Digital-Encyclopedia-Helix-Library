@@ -1,29 +1,24 @@
 import React, { useEffect, useRef } from 'react';
-
 export default function App() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-
-  // ✅ URLs
+  //  ✅  URLs
   const netlifyUrl = "https://largest-independentresearcher-library.netlify.app/";
   const noveltyUrl = "https://novelty-benchmark-kallol-chakrabarti.netlify.app/";
   const governanceMarketUrl = "https://helixoriginator.github.io/Kallol-Chakrabarti-Research-Repository-Governance-Market-Systems-and-Strategic-Frameworks/";
   const civicKnowledgeUrl = "https://helixoriginator.github.io/Civic-Knowledge-Hub-Governance-Law-Democracy-Studies/";
-  const researchRepositoriesUrl = "https://kallol-research-repositories.netlify.app/";
+  const researchRepositoriesUrl = "https://kallol-241-repositories.netlify.app/";
   const aiUrl = "https://kallol-chakrabarti-ai.netlify.app/";
   const globalPortalUrl = "https://global-knowledge-governance-portal.netlify.app/#websites";
   const helixGithubUrl = "https://helixoriginator.github.io/World-Largest-Independent-Digital-Encyclopedia-Helix-Library/";
   const docuHelixUrl = "https://helixoriginator.github.io/sovereign-research-docu-helix/";
   const policyAuditorUrl = "https://opal.google/app/1Ms-1bHVXqp99u4B_uH7ejvWEa0ZXDk71";
-
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
-
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-
     const particles: { x: number; y: number; vx: number; vy: number; size: number; opacity: number }[] = [];
     for (let i = 0; i < 80; i++) {
       particles.push({
@@ -35,7 +30,6 @@ export default function App() {
         opacity: Math.random() * 0.5 + 0.1,
       });
     }
-
     let animId: number;
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -80,59 +74,57 @@ export default function App() {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-
   const buttons = [
     {
       href: netlifyUrl,
       label: "Launch Full Encyclopedia",
       sub: "240+ Frameworks · World's Largest Archive",
-      icon: "◈",
+      icon: " ◈ ",
       type: "primary",
     },
     {
       href: noveltyUrl,
       label: "25 Verified Novelty Breakthroughs",
       sub: "DeSci Labs · 90–100% Novelty Scores",
-      icon: "★",
+      icon: " ★ ",
       type: "gold",
     },
     {
       href: aiUrl,
       label: "Kallol Chakrabarti AI",
       sub: "AI-Powered Research Interface",
-      icon: "⬡",
+      icon: " ⬡ ",
       type: "ai",
     },
     {
       href: globalPortalUrl,
       label: "Global Knowledge Governance Portal",
       sub: "8+ Knowledge Portals · Papers · Research Fields · 100% Independent",
-      icon: "🌐",
+      icon: " 🌐 ",
       type: "portal",
     },
     {
       href: governanceMarketUrl,
       label: "Governance, Market & Strategic Frameworks",
       sub: "Research Repository · GitHub",
-      icon: "📊",
+      icon: " 📊 ",
       type: "secondary",
     },
     {
       href: civicKnowledgeUrl,
       label: "Civic Knowledge Hub",
       sub: "Governance · Law · Democracy Studies",
-      icon: "⚖️",
+      icon: " ⚖️ ",
       type: "secondary",
     },
     {
       href: researchRepositoriesUrl,
       label: "All Research Repositories Index",
       sub: "Complete Archive · All Domains",
-      icon: "🗂️",
+      icon: " 🗂️ ",
       type: "secondary",
     },
   ];
-
   return (
     <div style={{
       margin: 0,
@@ -146,11 +138,8 @@ export default function App() {
     }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap');
-
         * { box-sizing: border-box; margin: 0; padding: 0; }
-
         body { background: #060b14; }
-
         .helix-title {
           font-family: 'Cormorant Garamond', Georgia, serif;
           font-weight: 300;
@@ -163,11 +152,9 @@ export default function App() {
           background-clip: text;
           text-transform: uppercase;
         }
-
         .helix-mono {
           font-family: 'JetBrains Mono', monospace;
         }
-
         .btn-primary {
           position: relative;
           display: flex;
@@ -193,7 +180,6 @@ export default function App() {
         }
         .btn-primary:hover::before { opacity: 1; }
         .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 20px 40px -10px rgba(37,99,235,0.5); }
-
         .btn-gold {
           position: relative;
           display: flex;
@@ -219,7 +205,6 @@ export default function App() {
         }
         .btn-gold:hover::before { opacity: 1; }
         .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 20px 40px -10px rgba(251,191,36,0.3); border-color: rgba(251,191,36,0.8); }
-
         .btn-ai {
           position: relative;
           display: flex;
@@ -245,7 +230,6 @@ export default function App() {
         }
         .btn-ai:hover::before { opacity: 1; }
         .btn-ai:hover { transform: translateY(-2px); box-shadow: 0 20px 40px -10px rgba(139,92,246,0.4); border-color: rgba(167,139,250,0.9); }
-
         .btn-portal {
           position: relative;
           display: flex;
@@ -271,7 +255,6 @@ export default function App() {
         }
         .btn-portal:hover::before { opacity: 1; }
         .btn-portal:hover { transform: translateY(-2px); box-shadow: 0 20px 40px -10px rgba(20,184,166,0.35); border-color: rgba(45,212,191,0.85); }
-
         .btn-amber {
           position: relative;
           display: flex;
@@ -297,7 +280,6 @@ export default function App() {
         }
         .btn-amber:hover::before { opacity: 1; }
         .btn-amber:hover { transform: translateY(-2px); box-shadow: 0 20px 40px -10px rgba(234,88,12,0.35); border-color: rgba(251,146,60,0.85); }
-
         .btn-sovereign {
           position: relative;
           display: flex;
@@ -323,7 +305,6 @@ export default function App() {
         }
         .btn-sovereign:hover::before { opacity: 1; }
         .btn-sovereign:hover { transform: translateY(-2px); box-shadow: 0 20px 40px -10px rgba(225,29,72,0.35); border-color: rgba(251,113,133,0.85); }
-
         .btn-secondary {
           position: relative;
           display: flex;
@@ -349,13 +330,11 @@ export default function App() {
         }
         .btn-secondary:hover::before { opacity: 1; }
         .btn-secondary:hover { transform: translateY(-2px); border-color: rgba(99,179,237,0.3); color: #e2e8f0; box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5); }
-
         .divider-line {
           width: 100%;
           height: 1px;
           background: linear-gradient(90deg, transparent, rgba(99,179,237,0.3), transparent);
         }
-
         .badge {
           display: inline-flex;
           align-items: center;
@@ -370,7 +349,6 @@ export default function App() {
           letter-spacing: 0.05em;
           text-transform: uppercase;
         }
-
         .glow-orb {
           position: absolute;
           border-radius: 50%;
@@ -378,7 +356,6 @@ export default function App() {
           pointer-events: none;
           z-index: 0;
         }
-
         @keyframes fadeUp {
           from { opacity: 0; transform: translateY(24px); }
           to { opacity: 1; transform: translateY(0); }
@@ -389,24 +366,20 @@ export default function App() {
         .delay-3 { animation-delay: 0.35s; }
         .delay-4 { animation-delay: 0.5s; }
         .delay-5 { animation-delay: 0.65s; }
-
         @keyframes subtlePulse {
           0%, 100% { opacity: 0.4; }
           50% { opacity: 0.7; }
         }
       `}</style>
-
       {/* Animated canvas background */}
       <canvas ref={canvasRef} style={{
         position: 'fixed', top: 0, left: 0,
         width: '100%', height: '100%',
         pointerEvents: 'none', zIndex: 0,
       }} />
-
       {/* Glow orbs */}
       <div className="glow-orb" style={{ width: 500, height: 500, background: 'rgba(37,99,235,0.07)', top: -100, left: -100 }} />
       <div className="glow-orb" style={{ width: 400, height: 400, background: 'rgba(109,40,217,0.06)', bottom: 0, right: -100 }} />
-
       {/* Main content */}
       <div style={{
         position: 'relative', zIndex: 1,
@@ -429,18 +402,15 @@ export default function App() {
           }}>
             CERN · ZENODO · DESCI LABS · 2026
           </div>
-
           <h1 className="helix-title" style={{ marginBottom: '16px' }}>
             Helix Encyclopedia
           </h1>
-
           {/* Ornamental rule */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '16px', marginBottom: '20px' }}>
             <div style={{ width: 60, height: 1, background: 'linear-gradient(90deg, transparent, rgba(99,179,237,0.4))' }} />
             <div style={{ width: 6, height: 6, border: '1px solid rgba(99,179,237,0.5)', transform: 'rotate(45deg)' }} />
             <div style={{ width: 60, height: 1, background: 'linear-gradient(90deg, rgba(99,179,237,0.4), transparent)' }} />
           </div>
-
           <p style={{
             fontFamily: 'Cormorant Garamond, Georgia, serif',
             fontSize: 'clamp(0.95rem, 2vw, 1.15rem)',
@@ -453,15 +423,13 @@ export default function App() {
             World's Largest Archive of Original Intellectual Property<br />
             <span style={{ color: '#93c5fd' }}>240+ Frameworks by Kallol Chakrabarti</span>
           </p>
-
           {/* Badges */}
           <div style={{ display: 'flex', gap: '10px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <span className="badge">◈ Verified Research</span>
-            <span className="badge">◈ DOI: 10.5281/zenodo.18498639</span>
-            <span className="badge">◈ 90–100% Novelty</span>
+            <span className="badge"> ◈  Verified Research</span>
+            <span className="badge"> ◈  DOI: 10.5281/zenodo.18498639</span>
+            <span className="badge"> ◈  90 – 100% Novelty</span>
           </div>
         </div>
-
         {/* Card */}
         <div className="fade-up delay-2" style={{
           width: '100%',
@@ -473,7 +441,6 @@ export default function App() {
           backdropFilter: 'blur(20px)',
           boxShadow: '0 40px 80px -20px rgba(0,0,0,0.7), inset 0 1px 0 rgba(99,179,237,0.08)',
         }}>
-
           {/* Section label */}
           <div className="helix-mono fade-up delay-2" style={{
             fontSize: '0.65rem', letterSpacing: '0.2em', color: '#334155',
@@ -482,7 +449,6 @@ export default function App() {
           }}>
             Research Access Portals
           </div>
-
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
             {/* Primary */}
             <div className="fade-up delay-2">
@@ -498,7 +464,6 @@ export default function App() {
                 </div>
               </a>
             </div>
-
             {/* Gold */}
             <div className="fade-up delay-3">
               <a href={buttons[1].href} target="_blank" rel="noopener noreferrer" className="btn-gold">
@@ -513,7 +478,6 @@ export default function App() {
                 </div>
               </a>
             </div>
-
             {/* AI — new, with world-first callout */}
             <div className="fade-up delay-3">
               {/* World-first banner above AI button */}
@@ -527,7 +491,7 @@ export default function App() {
                 borderLeft: '2px solid #a78bfa',
                 borderRadius: '2px',
               }}>
-                <span style={{ fontSize: '0.7rem' }}>⚡</span>
+                <span style={{ fontSize: '0.7rem' }}> ⚡ </span>
                 <p className="helix-mono" style={{
                   fontSize: '0.62rem',
                   color: '#c4b5fd',
@@ -549,11 +513,10 @@ export default function App() {
                 </div>
               </a>
             </div>
-
             {/* Global Portal */}
             <div className="fade-up delay-3">
               <a href={globalPortalUrl} target="_blank" rel="noopener noreferrer" className="btn-portal">
-                <span style={{ fontSize: '1.1rem', flexShrink: 0 }}>🌐</span>
+                <span style={{ fontSize: '1.1rem', flexShrink: 0 }}> 🌐 </span>
                 <div>
                   <div style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '1.05rem', fontWeight: 600, letterSpacing: '0.02em' }}>
                     Global Knowledge Governance Portal ↗
@@ -564,11 +527,10 @@ export default function App() {
                 </div>
               </a>
             </div>
-
             {/* Helix Library — GitHub Pages deployment */}
             <div className="fade-up delay-3">
               <a href={helixGithubUrl} target="_blank" rel="noopener noreferrer" className="btn-amber">
-                <span style={{ fontSize: '1.1rem', flexShrink: 0 }}>◉</span>
+                <span style={{ fontSize: '1.1rem', flexShrink: 0 }}> ◉ </span>
                 <div>
                   <div style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '1.05rem', fontWeight: 600, letterSpacing: '0.02em' }}>
                     Helix Encyclopedia — GitHub Archive ↗
@@ -590,7 +552,6 @@ export default function App() {
                 </p>
               </div>
             </div>
-
             {/* Docu Helix Sovereign Portal + Policy Auditor */}
             <div className="fade-up delay-3">
               {/* Sovereign callout */}
@@ -604,13 +565,13 @@ export default function App() {
                 borderLeft: '2px solid #fb7185',
                 borderRadius: '2px',
               }}>
-                <span style={{ fontSize: '0.7rem' }}>🇮🇳</span>
+                <span style={{ fontSize: '0.7rem' }}> 🇮🇳 </span>
                 <p className="helix-mono" style={{ fontSize: '0.62rem', color: '#fecdd3', letterSpacing: '0.08em', lineHeight: 1.5 }}>
                   <span style={{ color: '#fb7185', fontWeight: 600 }}>SOVEREIGN INTELLIGENCE ENGINE —</span> Audits policy using 226+ DOI-verified frameworks. Built for Atmanirbhar Bharat. Unlike generic AI — every insight anchored in national intellectual property.
                 </p>
               </div>
               <a href={docuHelixUrl} target="_blank" rel="noopener noreferrer" className="btn-sovereign">
-                <span style={{ fontSize: '1.1rem', flexShrink: 0 }}>⚑</span>
+                <span style={{ fontSize: '1.1rem', flexShrink: 0 }}> ⚑ </span>
                 <div>
                   <div style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '1.05rem', fontWeight: 600, letterSpacing: '0.02em' }}>
                     Docu Helix — Sovereign Research Portal ↗
@@ -634,7 +595,7 @@ export default function App() {
                 color: '#fecdd3',
                 transition: 'all 0.3s ease',
               }}>
-                <span style={{ fontSize: '0.9rem', flexShrink: 0 }}>◈</span>
+                <span style={{ fontSize: '0.9rem', flexShrink: 0 }}> ◈ </span>
                 <div>
                   <div style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '0.95rem', fontWeight: 600, letterSpacing: '0.02em' }}>
                     Policy Auditor — Sovereign AI Agent ↗
@@ -645,7 +606,6 @@ export default function App() {
                 </div>
               </a>
             </div>
-
             {/* Divider */}            <div className="fade-up delay-4" style={{ padding: '4px 0' }}>
               <div className="divider-line" />
               <div className="helix-mono" style={{
@@ -655,7 +615,6 @@ export default function App() {
                 Domain Repositories
               </div>
             </div>
-
             {/* Secondary buttons */}
             {buttons.slice(3).map((btn, i) => (
               <div key={btn.href} className={`fade-up delay-${4 + i}`}>
@@ -673,7 +632,6 @@ export default function App() {
               </div>
             ))}
           </div>
-
           {/* Validation strip */}
           <div className="fade-up delay-5" style={{
             marginTop: '28px',
@@ -696,7 +654,6 @@ export default function App() {
             </p>
           </div>
         </div>
-
         {/* Why Extraordinary Section */}
         <div className="fade-up delay-5" style={{
           width: '100%',
@@ -720,29 +677,28 @@ export default function App() {
               </h2>
             </div>
           </div>
-
           <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
             {[
               {
-                icon: '◈',
+                icon: ' ◈ ',
                 color: '#63b3ed',
                 title: 'Solo authorship at institutional scale',
                 text: '240+ original frameworks produced by a single independent researcher — with no university, no grants, no research team. This is virtually unheard of in modern academic history.',
               },
               {
-                icon: '★',
+                icon: ' ★ ',
                 color: '#fbbf24',
                 title: 'Scientifically verified novelty',
                 text: '25 frameworks independently scored 90–100% novel by DeSci Labs — not self-assessed. Each carries a permanent DOI via CERN/Zenodo. This is the standard of proof that institutions demand, met without one.',
               },
               {
-                icon: '⬡',
+                icon: ' ⬡ ',
                 color: '#a78bfa',
                 title: 'The world\'s first researcher-built AI on own IP',
                 text: 'The AI portal is likely the first instance of an independent researcher deploying a dedicated AI interface trained on their own original body of work — making 240+ frameworks conversationally accessible to anyone, anywhere.',
               },
               {
-                icon: '⚖',
+                icon: ' ⚖ ',
                 color: '#34d399',
                 title: 'Cross-domain architecture, not siloed papers',
                 text: 'From governance and law to market systems, philosophy, and civilisational logic — the archive spans disciplines in a unified intellectual framework, not fragmented journal articles.',
@@ -770,7 +726,6 @@ export default function App() {
             ))}
           </div>
         </div>
-
         {/* Footer */}
         <footer className="fade-up delay-5" style={{
           marginTop: '36px',
